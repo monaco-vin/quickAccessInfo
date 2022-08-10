@@ -37,6 +37,22 @@ function generateHtml(teamArray) {
       integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
       crossorigin="anonymous"
     />
+    <style>
+    header {
+      display: flex;
+      justify-content: center;
+      color: white;
+      background-color: red;
+    }
+    .card-header {
+      color: white;
+      background-color: blue;
+    }
+    .team {
+      display: flex;
+      justify-content: center;
+    }
+  </style>
     <title>Team Profile</title>
   </head>
   <body>
