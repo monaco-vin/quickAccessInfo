@@ -7,4 +7,6 @@ This is done through a Node.js command-line application that takes in informatio
 
 Below is a walkthru demonstration of the deployed application showing passing file tests AND the html that is generated.
 
-// ADD link to video
+Link to video walkthrough demo:
+
+https://youtu.be/wQvf_oqNlYE
