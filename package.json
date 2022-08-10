@@ -1,0 +1,23 @@
+{
+  "name": "quickaccessinfo",
+  "version": "1.0.0",
+  "description": "Website that displays team's basic info",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/monaco-vin/quickAccessInfo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/monaco-vin/quickAccessInfo/issues"
+  },
+  "homepage": "https://github.com/monaco-vin/quickAccessInfo#readme",
+  "dependencies": {
+    "inquirer": "^9.1.0"
+  }
+}
