@@ -1,4 +1,3 @@
-//const inquirer = require("inquirer");
 import inquirer from "inquirer";
 import fs from "fs";
 import path from "path";
@@ -6,7 +5,7 @@ import Engineer from "./lib/Engineer.js";
 import Manager from "./lib/Manager.js";
 import Intern from "./lib/Intern.js";
 import generateHtml from "./src/generateHtml.js";
-//new employees will be pushed to this []
+
 const employees = [];
 const managerQuestions = [
   {
@@ -86,7 +85,6 @@ const nextQuestion = [
 
 function start() {
   inquirer.prompt(managerQuestions).then((answers) => {
-    //console.log(answers);
     const manager = new Manager(
       answers.name,
       answers.id,
@@ -94,7 +92,7 @@ function start() {
       answers.officeNumber
     );
     employees.push(manager);
-    //console.log(employees);
+
     askNext();
   });
 }
@@ -127,7 +125,7 @@ function addIntern() {
 
 function completeTeam() {
   const htmlString = generateHtml(employees);
-  //console.log(htmlString);
+
   fs.writeFile("teamProfile.html", htmlString, "utf8", (err) => {
     if (err) {
       console.log(err);
@@ -156,13 +154,3 @@ function askNext() {
 }
 
 start();
-
-/*
-Create employee classes - |
-Write test for classes - couple more tests in other files and change line 1 of all files
-Get information from user - with inquier - |
-Use information to create employee objects using class I create - |
-Add employee to array of employees - |
-Use array of employees to create html string
-Use fs to generate html file  copy past style tag to generateHtml.js
-*/

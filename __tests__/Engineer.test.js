@@ -1,5 +1,5 @@
 import Engineer from "../lib/Engineer.js";
-//const Engineer = require("../lib/Engineer");
+
 const bob = new Engineer("bob", 1, "bob@bob.com", "bobGitCode");
 
 test("Engineer class creates an Engineer object with name", () => {
